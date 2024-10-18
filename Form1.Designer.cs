@@ -28,37 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.goodButton = new System.Windows.Forms.Button();
-            this.badButton = new System.Windows.Forms.Button();
+            this.btnGood = new System.Windows.Forms.Button();
+            this.btnBad = new System.Windows.Forms.Button();
             this.imgGood = new System.Windows.Forms.PictureBox();
             this.imgBad = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imgGood)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgBad)).BeginInit();
             this.SuspendLayout();
             // 
-            // goodButton
+            // btnGood
             // 
-            this.goodButton.BackColor = System.Drawing.Color.YellowGreen;
-            this.goodButton.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.goodButton.Location = new System.Drawing.Point(189, 375);
-            this.goodButton.Name = "goodButton";
-            this.goodButton.Size = new System.Drawing.Size(126, 63);
-            this.goodButton.TabIndex = 0;
-            this.goodButton.Text = "Good";
-            this.goodButton.UseVisualStyleBackColor = false;
-            this.goodButton.Click += new System.EventHandler(this.goodButton_Click);
+            this.btnGood.BackColor = System.Drawing.Color.YellowGreen;
+            this.btnGood.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGood.Location = new System.Drawing.Point(189, 375);
+            this.btnGood.Name = "btnGood";
+            this.btnGood.Size = new System.Drawing.Size(126, 63);
+            this.btnGood.TabIndex = 0;
+            this.btnGood.Text = "Good";
+            this.btnGood.UseVisualStyleBackColor = false;
+            this.btnGood.Click += new System.EventHandler(this.btnGood_Click);
             // 
-            // badButton
+            // btnBad
             // 
-            this.badButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.badButton.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.badButton.Location = new System.Drawing.Point(481, 375);
-            this.badButton.Name = "badButton";
-            this.badButton.Size = new System.Drawing.Size(126, 63);
-            this.badButton.TabIndex = 1;
-            this.badButton.Text = "Bad";
-            this.badButton.UseVisualStyleBackColor = false;
-            this.badButton.Click += new System.EventHandler(this.badButton_Click);
+            this.btnBad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnBad.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBad.Location = new System.Drawing.Point(481, 375);
+            this.btnBad.Name = "btnBad";
+            this.btnBad.Size = new System.Drawing.Size(126, 63);
+            this.btnBad.TabIndex = 1;
+            this.btnBad.Text = "Bad";
+            this.btnBad.UseVisualStyleBackColor = false;
+            this.btnBad.Click += new System.EventHandler(this.btnBad_Click);
             // 
             // imgGood
             // 
@@ -89,8 +89,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.imgGood);
             this.Controls.Add(this.imgBad);
-            this.Controls.Add(this.badButton);
-            this.Controls.Add(this.goodButton);
+            this.Controls.Add(this.btnBad);
+            this.Controls.Add(this.btnGood);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.imgGood)).EndInit();
@@ -101,8 +101,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button goodButton;
-        private System.Windows.Forms.Button badButton;
+        private System.Windows.Forms.Button btnGood;
+        private System.Windows.Forms.Button btnBad;
         private System.Windows.Forms.PictureBox imgBad;
         private System.Windows.Forms.PictureBox imgGood;
     }
